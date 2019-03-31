@@ -1,0 +1,39 @@
+{
+  "name": "olapic-app",
+  "version": "1.0.0",
+  "description": "Front-End engineer test for Olapic, by Ata Sanchez",
+  "repository": "git@gitlab.com:atasanchez/olapic-test.git",
+  "author": "Ata Sanchez <gahs94@mail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --config config/webpack.config.base.js --open --hot --history-api-fallback",
+    "build": "webpack --mode production --config config/webpack.config.prod.js -env.NODE_ENV=production --progress",
+    "start": "pm2 serve dist"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "recompose": "^0.30.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.4",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
+  }
+}

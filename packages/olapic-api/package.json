@@ -1,0 +1,18 @@
+{
+  "name": "olapic-api",
+  "version": "1.0.0",
+  "description": "Front-End engineer test for Olapic, by Ata Sanchez.",
+  "repository": "git@gitlab.com:atasanchez/olapic-test.git",
+  "author": "Ata Sanchez <gahs94@mail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "node app.js",
+    "build": "echo ;)",
+    "start": "pm2 start app.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
+  }
+}

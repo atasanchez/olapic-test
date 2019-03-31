@@ -1,0 +1,28 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "alias": {
+          "@config": "./src/config",
+          "@components": "./src/components",
+          "@services": "./src/services"
+        }
+      }
+    ]
+  ]
+}

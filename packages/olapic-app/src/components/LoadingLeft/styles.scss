@@ -1,0 +1,51 @@
+$circle-color: #eee;
+$size-to: 250px;
+.connection {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    .text {
+        margin-bottom: 200px;
+        color: white;
+    }
+    .circle {
+        overflow: hidden;
+        width: 40%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        z-index: 10000;
+    }
+    .circle__el {
+        width: 0;
+        height: 0;
+        background: transparent;
+        border: 5px solid $circle-color;
+        border-radius: 50%;
+        animation: go 1.5s ease-out infinite;
+    }
+    .circle__el_two {
+        animation-delay: 0.5s;
+    }
+    .circle__el_three {
+        animation-delay: 1s;
+    }
+    @keyframes go {
+        100% {
+            width: $size-to;
+            height: $size-to;
+            box-shadow: 0 0 15px $circle-color;
+            opacity: 0;
+        }
+    }
+}
