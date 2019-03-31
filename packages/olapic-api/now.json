@@ -4,5 +4,6 @@
   "alias": ["olapic-api.atasanchez.com"],
   "regions": ["sfo1"],
   "public": true,
+  "scope": "atasanchez",
   "builds": [{ "src": "*.js", "use": "@now/node" }]
 }

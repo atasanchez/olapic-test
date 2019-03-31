@@ -4,6 +4,7 @@
   "alias": ["olapic-app.atasanchez.com"],
   "regions": ["sfo1"],
   "public": true,
+  "scope": "atasanchez",
   "builds": [
     {
       "src": "package.json",
