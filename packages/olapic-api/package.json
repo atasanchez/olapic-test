@@ -7,8 +7,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "node app.js",
-    "build": "echo ;)",
+    "dev": "node index.js",
+    "build": "Done ;)",
     "start": "pm2 start app.js"
   },
   "dependencies": {

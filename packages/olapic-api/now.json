@@ -1,0 +1,7 @@
+{
+  "name": "olapic-api",
+  "alias": ["olapic-api.atasanchez.com"],
+  "regions": ["sfo1"],
+  "public": true,
+  "builds": [{ "src": "*.js", "use": "@now/node" }]
+}
